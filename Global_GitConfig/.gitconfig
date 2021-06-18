@@ -1,0 +1,22 @@
+[user]
+	name = winter lavigne
+	email = winter@ziekelingskes.eu
+[alias]
+	cb = checkout -b
+	s = status
+	ac = !git add -A && git commit -m
+	acp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+	co = checkout
+	db = branch -d
+	DB = branch -D
+	lb = branch -a
+	p = push
+	ffs = flow feature start
+	fff = flow feature finish
+	fbs = flow bugfix start
+	fbf = flow bugfix finish
+	frs = flow release start
+	frp = flow release publish
+	frt = flow release track
+	frf = flow release finish
+	su = push --set-upstream origin
