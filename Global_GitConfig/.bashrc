@@ -13,9 +13,13 @@ alias gcb='git checkout -b'
 # Git Command Aliases Add/commit
 # ----------------------
 alias gac='!git add -A && git commit -m'
-alias gacp='!f() { git add -A && git commit -m "$@" && git push; }; f'
 alias gp='git push'
 alias gpsu='git push --set-upstream origin'
+function gacp() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
 
 # ----------------------
 # Git Command Aliases Branch
@@ -36,4 +40,6 @@ alias gfrs='git flow release start'
 alias gfrp='git flow release publish'
 alias gfrt='git flow release track'
 alias gfrf='git flow release finish'
+
+
 
